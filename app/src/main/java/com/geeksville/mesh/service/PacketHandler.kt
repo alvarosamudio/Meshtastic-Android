@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ * along with this program.  See <https://www.gnu.org/licenses/>.
  */
 
 package com.geeksville.mesh.service
@@ -58,7 +58,7 @@ constructor(
 ) {
 
     companion object {
-        private const val TIMEOUT_MS = 250L
+        private const val TIMEOUT_MS = 5000L // Increased from 250ms to be more tolerant
     }
 
     private var queueJob: Job? = null
